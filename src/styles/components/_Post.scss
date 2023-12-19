@@ -1,0 +1,62 @@
+@import '../utils/mixins.scss';
+@import '../utils/variables.scss';
+
+%post-basic {
+    @include shadow-down;
+    
+    max-width: 800px;
+    min-width: 60vw;
+    border: 2px solid $powder-blue;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 50px
+}
+
+.post-container {
+    @extend %post-basic;
+}
+
+.user-container {
+    @include centered-content;
+
+    justify-content: space-between;
+    font-family: $font-title;
+    width: 100%;
+
+    img {
+        border: 2px solid $pink-lavender;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        justify-self: left;
+    }
+}
+
+.username-container {
+    margin-left: 30px;
+    text-align: right;
+    justify-self: center;
+    align-self: center;
+
+    h5 {
+        font-size: 20px;
+        margin: 0 0 5px;
+    }
+    .user-link {
+        text-decoration: none;
+        color: $lapis-lazuli;
+    }
+}
+
+.post-body {
+    font-size: 18px;
+    font-family: $font-body;
+    margin: 20px 0;
+}
+
+.post-date {
+    font-family: $font-body;
+    color: $thulian-pink;
+    text-align: right;
+    margin: 0;
+}
