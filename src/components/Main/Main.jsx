@@ -10,7 +10,6 @@ import Settings from "./Settings";
 const Main = () => {
 
   const { user } = useContext(UserContext);
-  console.log(user);
 
   return (
     <main>
