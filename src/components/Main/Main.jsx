@@ -23,7 +23,6 @@ const Main = () => {
         <Route path="/settings" element={<Settings />}/>
         <Route path="/*" element={<Navigate to={user ? "/" : "/login"} />} />
       </Routes>
-      
     </main>
   );
 };

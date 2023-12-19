@@ -19,7 +19,7 @@ const Nav = () => {
   const navigate = useNavigate();
 
   const handleLogout = async () => {
-    signOut();c
+    signOut();
     return navigate('/login');
   };
 
