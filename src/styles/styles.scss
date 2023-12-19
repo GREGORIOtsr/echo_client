@@ -1,7 +1,11 @@
 @import './views/App';
 
-@import './components/LogIn';
-@import './components/SignUp';
 @import './components/Header';
 @import './components/Nav';
-// @import './components';
+
+@import './components/LogIn';
+@import './components/SignUp';
+@import './components/PostList';
+@import './components/Post';
+@import './components/NewPost';
+@import './components/BackToTop';

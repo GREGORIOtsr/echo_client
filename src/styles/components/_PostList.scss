@@ -1,0 +1,6 @@
+@import '../utils/mixins.scss';
+
+#post-list {
+    @include centered-column-content;
+    margin: 40px 50px;
+}
