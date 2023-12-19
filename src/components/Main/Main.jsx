@@ -15,7 +15,6 @@ const Main = () => {
   return (
     <main>
       <Routes>
-        {/* <Route path="/" element={< />}/> */}
         <Route path="/login" element={!user ? <LogIn /> : <Home />}/>
         <Route path="/signup" element={<SignUp />}/>
         <Route path="/" element={<Home />}/>
