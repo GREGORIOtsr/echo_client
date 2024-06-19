@@ -10,12 +10,10 @@ import Settings from "./Settings";
 const Main = () => {
 
   const { user } = useContext(UserContext);
-  console.log(user);
 
   return (
     <main>
       <Routes>
-        {/* <Route path="/" element={< />}/> */}
         <Route path="/login" element={!user ? <LogIn /> : <Home />}/>
         <Route path="/signup" element={<SignUp />}/>
         <Route path="/" element={<Home />}/>

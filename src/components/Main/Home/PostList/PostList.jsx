@@ -9,9 +9,9 @@ const PostList = ({ postList }) => {
     return data.map(d => (
       <Post 
         key={uuidv4()}
-        pic={d.User.profile_picture !== 'default.png' ? d.User.profile_picture : basePFP}
-        name={d.User.profile_name !== 'none' ? d.User.profile_name : d.User.username}
-        user={d.User.username}
+        pic={d.user.profile_picture !== 'default.png' ? d.user.profile_picture : basePFP}
+        name={d.user.profile_name !== 'none' ? d.user.profile_name : d.user.username}
+        user={d.user.username}
         body={d.body}
         date={d.createdAt.slice(0, 10)}
       />
